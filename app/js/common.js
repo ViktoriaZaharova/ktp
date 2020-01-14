@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('.main-slider').slick({
         slidesToShow: 1,
@@ -7,8 +7,8 @@ $(document).ready(function() {
         appendArrows: '.main-slider__nav'
     });
 
-    $(".main-slider").on('afterChange', function(event, slick, currentSlide){
-        $(".main-slider-cp").text(currentSlide<10?`0${currentSlide+1}`:currentSlide+1);
+    $(".main-slider").on('afterChange', function (event, slick, currentSlide) {
+        $(".main-slider-cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
     });
 
     $('.project-slider').slick({
@@ -19,8 +19,8 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
-    $(".project-slider").on('afterChange', function(event, slick, currentSlide){
-        $(".project-cp").text(currentSlide<10?`0${currentSlide+1}`:currentSlide+1);
+    $(".project-slider").on('afterChange', function (event, slick, currentSlide) {
+        $(".project-cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
     });
 
     $('.gallery-slider').slick({
@@ -31,8 +31,8 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
-    $(".gallery-slider").on('afterChange', function(event, slick, currentSlide){
-        $(".gallery-slider-cp").text(currentSlide<10?`0${currentSlide+1}`:currentSlide+1);
+    $(".gallery-slider").on('afterChange', function (event, slick, currentSlide) {
+        $(".gallery-slider-cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
     });
 
     ymaps.ready(function () {
@@ -55,14 +55,33 @@ $(document).ready(function() {
 
     $('.gallery-box').fancybox();
     $('[data-fancybox="video"]').fancybox({
-        youtube : {
-            controls : 0,
-            showinfo : 0
+        youtube: {
+            controls: 0,
+            showinfo: 0
         },
-        vimeo : {
-            color : 'f00'
+        vimeo: {
+            color: 'f00'
         }
     });
+
+    $('.drop-item').click(function (e) {
+        e.preventDefault();
+        $('.header-dropdown').fadeToggle();
+    });
+
+    var activeStep = 1;
+    $('.calculation .btn-next').click(function (e) {
+        e.preventDefault();
+        $('.calculation-body').hide().eq(activeStep++).show();
+
+        if (activeStep == $('.calculation-body').length) {
+            $(this).hide();
+        }
+        // $('.readiness-scale__line .bg-line').css("width", "+=25%");
+
+        $('.readiness-scale span').text(parseFloat($('.readiness-scale span').text()) + 1);
+    });
+
 });
 
 

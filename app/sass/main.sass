@@ -127,6 +127,7 @@ a
 
 .bg-green
   background: #00a652
+
   &:hover
     background: #008341
 
@@ -134,6 +135,7 @@ a
   border: solid 1px #ffffff
   font-size: 18px
   font-weight: 500
+
   &:hover
     background: #ffffff
     color: #000
@@ -141,6 +143,7 @@ a
 .btn-border-green
   border-color: #00a652
   color: #00a652
+
   &:hover
     border-color: #00a652
 
@@ -148,12 +151,13 @@ a
   width: 100%
   position: relative
   padding: 0 0 0 74px
+
   &:before
     content: ''
     position: absolute
     left: 0
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     width: 15px
     height: 94px
     background: #3d8cbd
@@ -180,6 +184,7 @@ h1
 .btn-blue
   background: #3d8cbd
   color: #fff
+
   &:hover
     background: #31729a
 
@@ -261,7 +266,6 @@ h1
 
 .drop-item
   position: relative
-
   &::after
     content: ''
     margin: 0 0 0 14px
@@ -272,6 +276,62 @@ h1
     display: inline-flex
     transition: .3s ease
 
+//dropdown-menu
+.header-dropdown
+  position: absolute
+  z-index: 2
+  left: 0
+  width: 100%
+  background: #edf1f4
+  display: none
+  h3
+    margin: 0 0 35px
+    text-transform: uppercase
+    color: #191919
+    font-weight: bold
+
+.header-dropdown__top
+  border-bottom: 1px solid #e8e8e8
+  .container
+    padding: 75px 79px 30px 73px
+    justify-content: space-between
+
+.dropdown-menu
+  li
+    margin: 0 0 18px
+    &:last-child
+      margin: 0
+    a
+      color: #3d8cbd
+      font-weight: 500
+      &:hover
+        color: #000
+
+.header-dropdown__bottom
+  .container
+    padding: 41px 153px 66px 73px
+    justify-content: flex-start
+  .links
+    color: #191919
+    font-weight: bold
+    text-transform: uppercase
+  .link
+    display: flex
+    align-items: flex-end
+    font-weight: bold
+    color: #f24149
+    text-transform: uppercase
+    .icon
+      width: 24px
+      margin: 0 0 0 21px
+  .size
+    color: #798b96
+    margin: 10px 0 0 0
+    font-family: 'futura-book', sans-serif
+  .dropdown-box
+    &:first-child
+      margin: 0 335px 0 0
+
 
 // main
 .main-slider__wrapper
@@ -281,8 +341,10 @@ h1
 .main-slider
   width: 100%
   position: relative
+
   .slide
     position: relative
+
     &:before
       content: ''
       height: 100%
@@ -292,6 +354,7 @@ h1
       left: 0
       top: 0
       z-index: 1
+
   .slide-bg
     position: absolute
     left: 0
@@ -311,9 +374,11 @@ h1
   justify-content: center
   width: 75px
   color: #798b96
+
   p
     transform: rotate(-90deg)
     white-space: nowrap
+
   .icon
     margin: 60px 0 0 0
 
@@ -334,16 +399,19 @@ h1
   width: 100%
   color: #fff
   padding: 213px 0 38px 72px
+
   .links
     color: #fff
     font-size: 18px
     font-weight: 500
     margin: 0 20px 0 0
+
   .btn
     line-height: 4.44
     width: 190px
     height: 62px
     color: #fff
+
     &:hover
       color: #000
 
@@ -370,6 +438,7 @@ h1
   width: 8px
   height: 13px
   transition: .3s ease
+
   &:before
     display: none
 
@@ -377,6 +446,7 @@ h1
   left: 0
   background: url("../img/arrow-left.png") no-repeat center
     size: contain
+
   &:hover, &:focus
     background: url("../img/arrow-left.png") no-repeat center
       size: contain
@@ -386,6 +456,7 @@ h1
   right: 0
   background: url("../img/arrow-right.png") no-repeat center
     size: contain
+
   &:hover, &:focus
     background: url("../img/arrow-right.png") no-repeat center
       size: contain
@@ -398,8 +469,10 @@ h1
   color: #ffffff
   font-size: 18px
   font-family: 'bebas', sans-serif
+
   .cp
     font-size: 36px
+
   .line
     letter-spacing: 0.6px
     margin: 0 10px
@@ -428,6 +501,7 @@ h1
   margin: 45px 0 0 0
   padding: 48px 12px 15px 42px
   box-sizing: border-box
+
   &:before
     content: ''
     position: absolute
@@ -439,6 +513,7 @@ h1
     background: #3d8cbd
     z-index: 1
     transition: .3s ease
+
   .icon
     width: 50px
     height: 50px
@@ -448,12 +523,15 @@ h1
     z-index: 2
     margin: auto 0 0 auto
     transition: .3s ease
+
   &:hover
     &:before
       opacity: 0.4
+
     .icon
       background: url("../img/arrow-right-blue.png") #fff no-repeat center
         size: 11px
+
     .product-box__bg
       filter: none
 
@@ -484,6 +562,7 @@ h1
 //section-services
 .section-services
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -492,6 +571,7 @@ h1
     width: 100%
     height: 353px
     background: #3d8cbd
+
   .container
     position: relative
     z-index: 1
@@ -520,10 +600,12 @@ h1
   justify-content: center
   position: relative
   margin: 0 0 39px
+
   img
     height: 100%
     width: 100%
     object-fit: cover
+
   .links
     position: absolute
     bottom: 13px
@@ -533,6 +615,7 @@ h1
     height: 50px
     background: url("../img/arrow-right-white.png") #7ad0e7 no-repeat center
       size: 11px
+
     &:hover
       background: url("../img/arrow-right-blue.png") #ffffff no-repeat center
         size: 11px
@@ -545,6 +628,7 @@ h1
 
 .services-box__text
   text-align: center
+
   p
     letter-spacing: 0.16px
     color: #bee5f7
@@ -568,12 +652,15 @@ h1
   width: 100%
   color: #798b96
   font-size: 14px
+
   .text
     height: 182px
     overflow: hidden
     line-height: 1.5
+
     p
       margin: 0 0 20px
+
   .btn
     margin: 50px 0 0 0
     font-size: 18px
@@ -588,10 +675,12 @@ h1
   display: flex
   flex-wrap: wrap
   align-items: center
+
   .icon
     min-width: 41px
     margin: 0 29px 0 0
     max-width: 41px
+
   p
     max-width: 190px
     width: 100%
@@ -606,6 +695,7 @@ h1
 .project
   position: relative
   padding: 90px 0 80px
+
   &:before
     content: ''
     position: absolute
@@ -614,13 +704,17 @@ h1
     height: 100%
     left: 0
     background: #3d8cbd
+
   .container
     position: relative
     z-index: 1
+
   h2
     color: #ffffff
+
     &:before
       background: #7ad0e7
+
   .line-title
     margin: 0 0 94px
     padding: 0 140px 0 0
@@ -631,6 +725,7 @@ h1
   justify-content: space-between
   align-items: center
   flex-wrap: wrap
+
   .subtitle
     width: auto
 
@@ -646,10 +741,12 @@ h1
   justify-content: space-between
   z-index: 1
   margin: 0 -30px 0 0
+
   h3
     font-weight: 500
     color: #191919
     margin: 0 0 auto
+
   p
     color: #798b96
     font-size: 14px
@@ -664,6 +761,7 @@ h1
   width: 380px
   height: 285px
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -673,6 +771,7 @@ h1
       size: 19px
     bottom: 14px
     right: 13px
+
   img
     width: 100%
     height: 100%
@@ -691,6 +790,7 @@ h1
 .project-slider__nav
   display: flex
   align-items: center
+
   .slick-arrow
     width: 68px
     height: 68px
@@ -717,6 +817,7 @@ h1
 .partner-box
   height: 52px
   opacity: .5
+
   img
     height: 100%
     width: auto
@@ -728,21 +829,25 @@ h1
 
 .maps
   margin: 0 0 102px
+
   .container
     padding: 0 0 0 74px
 
 //footer
 footer
   padding: 0 0 35px
+
   .container
     justify-content: space-between
     align-items: stretch
     padding: 0 63px 0 37px
+
   .phone
     font-size: 24px
     margin: 0 0 29px
     line-height: 0.88
     font-family: 'futura', sans-serif
+
     .icon
       width: 15px
       margin: 0 21px 0 0
@@ -759,11 +864,13 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-start
+
   h3
     margin: 0 0 30px
     color: #191919
     font-size: 21px
     font-weight: 500
+
   .icon
     width: 25px
     margin: 0 19px 0 0
@@ -772,16 +879,19 @@ footer
 .mail
   display: flex
   align-items: center
+
   .text
     text-decoration: underline
     color: #3d8cbd
     font-size: 14px
+
   .icon
     width: 22px
 
 .schedule, .address
   display: flex
   align-items: center
+
   p
     color: #798b96
 
@@ -790,12 +900,14 @@ footer
 .address
   .icon
     width: 19px
+
   p
     max-width: 210px
 
 .schedule
   font-size: 14px
   margin: 39px 0 31px
+
   p
     max-width: 179px
 
@@ -805,6 +917,7 @@ footer
       color: #191919
       letter-spacing: 0.16px
       line-height: 1.88
+
       &:hover
         color: #798b96
 
@@ -815,17 +928,23 @@ footer
 //all-project
 .all-project
   padding: 78px 0 139px
+
   &:before
     height: calc(100% - 59px)
+
   .subtitle
     padding: 0 0 0 42px
+
     &:before
       display: none
+
   .line-title
     margin: 0 0 85px
     padding: 0
+
   .container
     padding: 0 145px 0 42px
+
     .project-slider
       padding: 0
 
@@ -843,10 +962,13 @@ footer
   align-items: center
   justify-content: center
   flex-wrap: wrap
+
   li
     margin: 0 20px 0 0
+
     &:last-child
       margin: 0
+
     a
       font-size: 14px
       letter-spacing: 0.14px
@@ -854,6 +976,7 @@ footer
       position: relative
       display: flex
       align-items: center
+
       &:after
         content: ''
         margin: 0 0 0 20px
@@ -862,8 +985,10 @@ footer
         background: url("../img/arrow-right-blue.png") no-repeat center
           size: contain
         display: flex
+
       &:hover
         color: #000
+
     span
       font-size: 14px
       letter-spacing: 0.14px
@@ -872,24 +997,30 @@ footer
 //works-page
 .works-page
   margin: 74px 0 90px
+
   .container
     padding: 0 88px 0 81px
+
   h3
     width: 100%
     color: #191919
     font-size: 30px
     font-weight: 500
     margin: 0 0 45px
+
   .text-box
     color: #798b96
     font-size: 14px
     line-height: 1.5
+
     p
       margin: 0 0 20px
+
       .links
         display: inline-block
         color: #3d8cbd
         text-decoration: underline
+
       &:last-child
         margin: 0
 
@@ -908,6 +1039,7 @@ footer
   color: #798b96
   font-size: 14px
   margin: 0 150px 0 0
+
   .number
     color: #3d8cbd
     font-size: 60px
@@ -916,6 +1048,7 @@ footer
     align-items: flex-end
     margin: 0 0 28px
     line-height: 0.65
+
     span
       color: #798b96
       font-size: 30px
@@ -927,6 +1060,7 @@ footer
 
 .gallery
   margin: 0 0 103px
+
   .container
     padding: 0 73px 0 83px
 
@@ -937,16 +1071,20 @@ footer
 .gallery-slider__nav
   display: flex
   align-items: center
+
   .counter-slide
     color: #191919
+
   .slick-arrow
     border: solid 1px #7ad0e7
       radius: 50%
     width: 68px
     height: 68px
+
   .slick-next
     background: url("../img/arr-right-blue.png") no-repeat center
       size: 8px
+
   .slick-prev
     background: url("../img/arr-left-blue.png") no-repeat center
       size: 8px
@@ -971,13 +1109,17 @@ footer
 .reviews-text
   width: 100%
   max-width: 620px
+
   .text
     color: #191919
     letter-spacing: 0.16px
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
+
   .line
     width: 100%
     display: flex
@@ -985,6 +1127,7 @@ footer
     align-items: center
     flex-wrap: wrap
     margin: 44px 0 0 0
+
     .name
       color: #1a85a3
       font-size: 18px
@@ -1008,19 +1151,22 @@ footer
   color: #fff
   line-height: 1.5
   font-weight: 500
+
   .container
     position: relative
     z-index: 1
     padding: 35px 210px 31px 130px
+
     &:before
       content: ''
       position: absolute
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       width: 11px
       height: 56px
       background: #7ad0e7
       left: 89px
+
   &:before
     content: ''
     position: absolute
@@ -1032,9 +1178,11 @@ footer
 
 .article-page
   margin: 72px 0 51px
+
   h3
     font-size: 24px
     margin: 0 0 36px
+
   .container
     padding: 0 83px 0 81px
 
@@ -1045,15 +1193,17 @@ footer
   font-size: 14px
   width: 100%
   line-height: 2.57
+
   li
     position: relative
     padding: 0 0 0 25px
+
     &:before
       content: ''
       position: absolute
       left: 0
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       width: 7px
       height: 7px
       border-radius: 50%
@@ -1065,12 +1215,14 @@ footer
 .table
   width: 100%
   background: #edf1f4
+
   .links
     color: #3d8cbd
 
 .table-head
   background: #3d8cbd
   color: #fff
+
   .name
     padding: 22px 34px 23px
     font-size: 18px
@@ -1078,6 +1230,7 @@ footer
     text-align: left
     border:
       right: 1px solid rgba(#fff, .2)
+
     &:first-child
       border:
         left: 1px solid rgba(#fff, .2)
@@ -1085,15 +1238,19 @@ footer
 .table-body
   color: #191919
   border-bottom: 1px solid #e8e8e8
+
   &:last-child
     border: none
+
   .name
     padding: 22px 34px 21px
     border:
       right: 1px solid #e8e8e8
+
     &:first-child
       border:
         left: 1px solid #e8e8e8
+
   &:nth-child(odd)
     background: #ffffff
 
@@ -1112,10 +1269,12 @@ footer
   color: #798b96
   padding: 0 0 0 30px
   width: 100%
+
   span
     font-weight: bold
     color: #3d8cbd
     margin: 0 5px 0 0
+
   li
     display: flex
     align-items: center
@@ -1124,17 +1283,19 @@ footer
   position: relative
   width: 100%
   height: 100%
+
   img
     opacity: .7
     width: 100%
     height: 100%
     object-fit: cover
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     width: 79px
     height: 79px
     background: url("../img/play.png") #7ad0e7 no-repeat center
@@ -1157,8 +1318,10 @@ footer
   color: #798b96
   font-size: 14px
   margin: 0 0 55px
+
   li
     margin: 0 0 19px
+
     &:last-child
       margin: 0
 
@@ -1168,8 +1331,10 @@ footer
   flex-direction: row
   align-items: center
   justify-content: flex-start
+
   .checkbox-inp
     display: none
+
   .checkbox-custom
     position: relative
     width: 16px
@@ -1182,13 +1347,16 @@ footer
     cursor: pointer
     transition: .3s ease
     margin: 0 14px 0 0
+
   .label
     display: inline-block
     vertical-align: middle
     cursor: pointer
+
   .checkbox-inp:checked + .checkbox-custom
     background: #3d8cbd
     border-color: #3d8cbd
+
     &::before
       content: ""
       display: block
@@ -1197,7 +1365,7 @@ footer
       height: 7px
       left: 50%
       top: 50%
-      transform: translate(-50%,-50%)
+      transform: translate(-50%, -50%)
       background: url("../img/check.png") no-repeat center
         size: contain
 
@@ -1205,6 +1373,7 @@ footer
 .author-line
   position: relative
   margin: 0 0 57px
+
   &:before
     content: ''
     position: absolute
@@ -1213,6 +1382,7 @@ footer
     background: #edf1f4
     width: calc(100% - 76px)
     height: 100%
+
   .container
     z-index: 1
     position: relative
@@ -1230,10 +1400,12 @@ footer
     color: #798b96
     font-size: 14px
     margin: 0 0 10px
+
   .name
     display: flex
     align-items: center
     color: #191919
+
     strong
       color: #3d8cbd
       font-weight: bold
@@ -1241,11 +1413,13 @@ footer
 //page services
 .main-services
   position: relative
+
   .container
     padding: 69px 17px 64px 83px
     position: relative
 
     z-index: 1
+
     &:before
       content: ''
       position: absolute
@@ -1255,6 +1429,7 @@ footer
       height: 100%
       background: url("../img/article1.jpg") no-repeat center
         size: cover
+
     &:after
       content: ''
       position: absolute
@@ -1264,6 +1439,7 @@ footer
       height: 100%
       background-image: linear-gradient(to top, #286e9a 0%, rgba(35, 106, 150, 0) 100%)
       z-index: 1
+
   h1
     text-align: left
     color: #fff
@@ -1277,6 +1453,7 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-start
+
   .text
     color: #fff
     line-height: 1.88
@@ -1291,14 +1468,17 @@ footer
 
 .services-page
   margin: 78px 0 74px
+
   .container
     padding: 0 101px 0 90px
 
 .products
   h2
     width: 100%
+
   .container
     padding: 0 95px 0 90px
+
   h3
     max-width: 690px
     width: 100%
@@ -1330,6 +1510,7 @@ footer
   display: flex
   align-items: flex-end
   justify-content: center
+
   &:before
     content: ''
     position: absolute
@@ -1339,6 +1520,7 @@ footer
     height: 50px
     background: url("../img/arrow-right-white.png") #7ad0e7 no-repeat center
       size: 11px
+
   &:first-child
     align-items: flex-start
 
@@ -1352,22 +1534,27 @@ footer
 
 .leaders-two
   margin: 119px 0 99px
+
   .container
     padding: 0 107px 0 90px
+
   .leaders-content
     padding: 0
 
 //documentation
 .documentation
   margin: 0 0 64px
+
   h2
     width: 100%
     margin: 0 0 54px
+
   .container
     padding: 0 90px
 
 .list-document
   margin: 0 311px 0 0
+
   &:last-child
     margin: 0
 
@@ -1378,13 +1565,16 @@ footer
   color: #1a85a3
   line-height: 1.63
   font-weight: 500
+
   .size
     color: #798b96
     line-height: normal
+
   .icon
     width: 41px
     display: inline-block
     margin: 0 29px 0 0
+
   .text
     display: flex
     flex-direction: column
@@ -1394,6 +1584,7 @@ footer
 .calculation
   position: relative
   margin: 0 0 115px
+
   &:before
     content: ''
     position: absolute
@@ -1402,12 +1593,14 @@ footer
     width: calc(100% - 90px)
     height: 100%
     background: #edf1f4
+
   .container
     position: relative
     z-index: 1
     padding: 70px 270px 84px 177px
     flex-direction: column
     align-items: center
+
   h3
     text-align: center
     color: #191919
@@ -1424,24 +1617,36 @@ footer
   background: #ffffff
   border-radius: 13.5px
   position: relative
+  overflow: hidden
   .bg-line
     position: absolute
     left: 0
     top: 0
+    width: 25%
     height: 100%
     background: url("../img/bg-line.png") no-repeat center
       size: cover
+    transition: .3s ease
+    border-radius: 13.5px
 
 .readiness-scale
   margin: 0 0 40px
+
   p
     color: #798b96
     letter-spacing: -0.16px
     text-align: center
     margin: 18px auto 0
 
+.calculation-body__wrapper
+  width: 100%
+
 .calculation-body
   width: 100%
+  display: none
+
+  &:first-child
+    display: block
 
 .number-stage
   display: flex
@@ -1454,6 +1659,7 @@ footer
   font-weight: 500
   letter-spacing: -0.21px
   margin: 0 0 11px
+
   .number
     margin: 0 39px 0 0
     width: 50px
@@ -1472,15 +1678,54 @@ footer
   flex-wrap: wrap
   justify-content: space-between
   align-items: flex-start
+
   label
     margin: 0 0 17px
     width: 400px
+    position: relative
+
+    .description
+      position: absolute
+      right: 25px
+      top: 50%
+      transform: translate(0, -50%)
+      color: #798b96
+
     input
       height: 70px
       padding: 0 22px
 
+  .ml-auto
+    margin-left: auto
+
+  .mr-auto
+    margin-right: auto
+
+  .w-100
+    width: 100%
+
+  h3
+    text-align: left
+    margin: 37px 0 25px
+    font-size: 18px
+    font-weight: 300
+
+    &:first-child
+      margin-top: 0
+
+.ml-auto
+  margin-left: auto
+
+.mr-auto
+  margin-right: auto
+
 label
   display: block
+
+.form-box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
 
 input
   width: 100%
@@ -1490,6 +1735,7 @@ input
   font-family: $default
   color: #798b96
   font-size: 16px
+
   &::placeholder
     color: #798b96
 
@@ -1504,6 +1750,7 @@ input
     width: 100%
     padding: 0 93px
     margin: 0 0 57px
+
   .container
     padding: 0 93px 0 16px
 
@@ -1534,6 +1781,7 @@ input
   align-items: flex-start
   justify-content: flex-end
   border: none
+
   &:before
     content: ''
     position: absolute
@@ -1543,9 +1791,11 @@ input
     height: 100%
     background-image: linear-gradient(to top, #286e9a 0%, rgba(35, 106, 150, 0) 100%)
     z-index: 1
+
   .section-article__box-title
     color: #fff
     margin: 0 0 34px
+
   .img-bg
     position: absolute
     left: 0
@@ -1553,6 +1803,7 @@ input
     width: 100%
     height: 100%
     object-fit: cover
+
   .date
     color: #7ad0e7
     position: relative
@@ -1571,6 +1822,7 @@ input
   position: relative
   height: 169px
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -1587,12 +1839,52 @@ input
   display: flex
   flex-direction: column
   align-items: flex-start
+
   .section-article__box-title
     font-size: 15px
     color: #191919
     letter-spacing: 0.15px
     margin: 0 0 auto
 
+.label-select
+  position: relative
+
+  select
+    width: 100%
+    background: url("../img/arrow-bottom.png") no-repeat 95% #fff
+      size: 17px
+    height: 70px
+    padding: 0 22px
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  outline: none
+  box-sizing: border-box
+  border: none
+    radius: 0
+  font-family: $default
+  color: #798b96
+  font-size: 16px
+  cursor: pointer
+
+  &::placeholder
+    color: #798b96
+
+textarea
+  width: 100%
+  outline: none
+  box-sizing: border-box
+  height: 136px
+  border: none
+  padding: 29px 23px
+  font-family: $default
+  color: #798b96
+  font-size: 16px
+
+  &::placeholder
+    color: #798b96
 
 
 @import "media"
