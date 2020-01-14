@@ -54,6 +54,15 @@ $(document).ready(function() {
     });
 
     $('.gallery-box').fancybox();
+    $('[data-fancybox="video"]').fancybox({
+        youtube : {
+            controls : 0,
+            showinfo : 0
+        },
+        vimeo : {
+            color : 'f00'
+        }
+    });
 });
 
 

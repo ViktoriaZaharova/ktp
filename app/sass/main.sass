@@ -814,8 +814,6 @@ footer
 
 //all-project
 .all-project
-  margin: 0 0 46px
-  border-bottom: 1px solid #e8e8e8
   padding: 78px 0 139px
   &:before
     height: calc(100% - 59px)
@@ -830,6 +828,10 @@ footer
     padding: 0 145px 0 42px
     .project-slider
       padding: 0
+
+.footer
+  border-top: 1px solid #e8e8e8
+  padding: 46px 0 35px
 
 .main-page
   padding: 49px 0 50px
@@ -884,6 +886,10 @@ footer
     line-height: 1.5
     p
       margin: 0 0 20px
+      .links
+        display: inline-block
+        color: #3d8cbd
+        text-decoration: underline
       &:last-child
         margin: 0
 
@@ -991,6 +997,601 @@ footer
   font-size: 11px
   font-weight: 500
   text-transform: uppercase
+
+.page-image
+  width: 100%
+  margin: 0 auto 62px
+
+.attention-box
+  position: relative
+  margin: 0 0 58px
+  color: #fff
+  line-height: 1.5
+  font-weight: 500
+  .container
+    position: relative
+    z-index: 1
+    padding: 35px 210px 31px 130px
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+      width: 11px
+      height: 56px
+      background: #7ad0e7
+      left: 89px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: calc(100% - 75px)
+    height: 100%
+    background: #3d8cbd
+
+.article-page
+  margin: 72px 0 51px
+  h3
+    font-size: 24px
+    margin: 0 0 36px
+  .container
+    padding: 0 83px 0 81px
+
+
+.list-dots
+  margin: 0 0 50px
+  color: #798b96
+  font-size: 14px
+  width: 100%
+  line-height: 2.57
+  li
+    position: relative
+    padding: 0 0 0 25px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background: #3d8cbd
+
+.w-100
+  width: 100%
+
+.table
+  width: 100%
+  background: #edf1f4
+  .links
+    color: #3d8cbd
+
+.table-head
+  background: #3d8cbd
+  color: #fff
+  .name
+    padding: 22px 34px 23px
+    font-size: 18px
+    font-weight: 500
+    text-align: left
+    border:
+      right: 1px solid rgba(#fff, .2)
+    &:first-child
+      border:
+        left: 1px solid rgba(#fff, .2)
+
+.table-body
+  color: #191919
+  border-bottom: 1px solid #e8e8e8
+  &:last-child
+    border: none
+  .name
+    padding: 22px 34px 21px
+    border:
+      right: 1px solid #e8e8e8
+    &:first-child
+      border:
+        left: 1px solid #e8e8e8
+  &:nth-child(odd)
+    background: #ffffff
+
+.note
+  color: #798b96
+  font-size: 14px
+  line-height: 1.5
+  width: 100%
+  max-width: 600px
+  margin: 28px 0 60px
+
+.list-number
+  margin: 0 0 59px
+  font-size: 14px
+  line-height: 1.71
+  color: #798b96
+  padding: 0 0 0 30px
+  width: 100%
+  span
+    font-weight: bold
+    color: #3d8cbd
+    margin: 0 5px 0 0
+  li
+    display: flex
+    align-items: center
+
+.video-links
+  position: relative
+  width: 100%
+  height: 100%
+  img
+    opacity: .7
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 79px
+    height: 79px
+    background: url("../img/play.png") #7ad0e7 no-repeat center
+      size: 23px
+    border-radius: 50%
+    z-index: 2
+
+.video-box
+  background: #3d8cbd
+  margin: 66px 0 60px
+  width: 609px
+  height: 313px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+.list-checkbox
+  width: 100%
+  color: #798b96
+  font-size: 14px
+  margin: 0 0 55px
+  li
+    margin: 0 0 19px
+    &:last-child
+      margin: 0
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 16px
+    height: 16px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #7ad0e7
+      radius: 4px
+    background: #edf1f4
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 14px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+  .checkbox-inp:checked + .checkbox-custom
+    background: #3d8cbd
+    border-color: #3d8cbd
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      width: 9px
+      height: 7px
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: url("../img/check.png") no-repeat center
+        size: contain
+
+
+.author-line
+  position: relative
+  margin: 0 0 57px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    background: #edf1f4
+    width: calc(100% - 76px)
+    height: 100%
+  .container
+    z-index: 1
+    position: relative
+    padding: 16px 90px 15px
+    align-items: center
+
+.user-icon
+  width: 69px
+  margin: -30px 36px 0 0
+  background: #fff
+  border-radius: 50%
+
+.user-text
+  h6
+    color: #798b96
+    font-size: 14px
+    margin: 0 0 10px
+  .name
+    display: flex
+    align-items: center
+    color: #191919
+    strong
+      color: #3d8cbd
+      font-weight: bold
+
+//page services
+.main-services
+  position: relative
+  .container
+    padding: 69px 17px 64px 83px
+    position: relative
+
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(100% - 76px)
+      height: 100%
+      background: url("../img/article1.jpg") no-repeat center
+        size: cover
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(100% - 76px)
+      height: 100%
+      background-image: linear-gradient(to top, #286e9a 0%, rgba(35, 106, 150, 0) 100%)
+      z-index: 1
+  h1
+    text-align: left
+    color: #fff
+    max-width: 730px
+    width: 100%
+    margin: 0
+
+.main-services__text
+  position: relative
+  z-index: 2
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .text
+    color: #fff
+    line-height: 1.88
+    max-width: 650px
+
+.btn-black
+  border: solid 1px #00a652
+  background: #292929
+  color: #fff
+  margin: 34px 0 0 0
+  padding: 19px 38px
+
+.services-page
+  margin: 78px 0 74px
+  .container
+    padding: 0 101px 0 90px
+
+.products
+  h2
+    width: 100%
+  .container
+    padding: 0 95px 0 90px
+  h3
+    max-width: 690px
+    width: 100%
+    color: #191919
+    font-weight: 500
+    font-size: 24px
+    margin: 0 0 35px
+
+.products-content
+  margin: 46px 0 44px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+
+.products-box
+  box-shadow: 0 12px 40px 0 rgba(56, 56, 56, 0.05)
+  border: solid 1px #e8e8e8
+  background-color: #ffffff
+  width: 375px
+  height: 271px
+  position: relative
+  margin: 0 0 44px
+  overflow: hidden
+  color: #3d8cbd
+  font-size: 21px
+  font-weight: bold
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  &:before
+    content: ''
+    position: absolute
+    bottom: 15px
+    right: 12px
+    width: 50px
+    height: 50px
+    background: url("../img/arrow-right-white.png") #7ad0e7 no-repeat center
+      size: 11px
+  &:first-child
+    align-items: flex-start
+
+
+.products-box__title
+  position: absolute
+  z-index: 2
+  left: 0
+  top: 0
+  padding: 48px 41px 0
+
+.leaders-two
+  margin: 119px 0 99px
+  .container
+    padding: 0 107px 0 90px
+  .leaders-content
+    padding: 0
+
+//documentation
+.documentation
+  margin: 0 0 64px
+  h2
+    width: 100%
+    margin: 0 0 54px
+  .container
+    padding: 0 90px
+
+.list-document
+  margin: 0 311px 0 0
+  &:last-child
+    margin: 0
+
+.links-doc
+  display: flex
+  align-items: flex-end
+  margin: 0 0 27px
+  color: #1a85a3
+  line-height: 1.63
+  font-weight: 500
+  .size
+    color: #798b96
+    line-height: normal
+  .icon
+    width: 41px
+    display: inline-block
+    margin: 0 29px 0 0
+  .text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+//calculation
+.calculation
+  position: relative
+  margin: 0 0 115px
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: calc(100% - 90px)
+    height: 100%
+    background: #edf1f4
+  .container
+    position: relative
+    z-index: 1
+    padding: 70px 270px 84px 177px
+    flex-direction: column
+    align-items: center
+  h3
+    text-align: center
+    color: #191919
+    max-width: 630px
+    width: 100%
+    letter-spacing: -0.36px
+    font-size: 36px
+    font-weight: 500
+    margin: 0 auto 54px
+
+.readiness-scale__line
+  width: 625px
+  height: 27px
+  background: #ffffff
+  border-radius: 13.5px
+  position: relative
+  .bg-line
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    background: url("../img/bg-line.png") no-repeat center
+      size: cover
+
+.readiness-scale
+  margin: 0 0 40px
+  p
+    color: #798b96
+    letter-spacing: -0.16px
+    text-align: center
+    margin: 18px auto 0
+
+.calculation-body
+  width: 100%
+
+.number-stage
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  position: relative
+  color: #191919
+  font-size: 21px
+  font-weight: 500
+  letter-spacing: -0.21px
+  margin: 0 0 11px
+  .number
+    margin: 0 39px 0 0
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: #1a85a3
+    color: #ffffff
+    font-weight: bold
+    display: flex
+    align-items: center
+    justify-content: center
+
+.form-calc
+  padding: 0 0 0 89px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+  label
+    margin: 0 0 17px
+    width: 400px
+    input
+      height: 70px
+      padding: 0 22px
+
+label
+  display: block
+
+input
+  width: 100%
+  outline: none
+  box-sizing: border-box
+  border: none
+  font-family: $default
+  color: #798b96
+  font-size: 16px
+  &::placeholder
+    color: #798b96
+
+.btn-next
+  margin: 28px 0 0 auto
+  width: 200px
+  height: 70px
+
+//section-article
+.section-article
+  h2
+    width: 100%
+    padding: 0 93px
+    margin: 0 0 57px
+  .container
+    padding: 0 93px 0 16px
+
+.section-article__content
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: stretch
+  justify-content: space-between
+
+.section-article__box
+  width: 100%
+  max-width: 285px
+  overflow: hidden
+  position: relative
+  background: #edf1f4
+  border: solid 1px #e8e8e8
+  box-sizing: border-box
+  margin: 0 0 70px
+
+.section-article__box-max
+  max-width: 683px
+  height: 336px
+  padding: 0 75px 28px
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-end
+  border: none
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(to top, #286e9a 0%, rgba(35, 106, 150, 0) 100%)
+    z-index: 1
+  .section-article__box-title
+    color: #fff
+    margin: 0 0 34px
+  .img-bg
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+  .date
+    color: #7ad0e7
+    position: relative
+    z-index: 1
+
+
+.section-article__box-title
+  font-size: 18px
+  font-weight: 500
+  letter-spacing: 0.18px
+  position: relative
+  z-index: 1
+
+
+.section-article__box-image
+  position: relative
+  height: 169px
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(to top, #286e9a 0%, rgba(35, 106, 150, 0) 100%)
+    z-index: 1
+
+.section-article__box-text
+  padding: 28px 27px
+  height: calc(100% - 169px)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .section-article__box-title
+    font-size: 15px
+    color: #191919
+    letter-spacing: 0.15px
+    margin: 0 0 auto
 
 
 
