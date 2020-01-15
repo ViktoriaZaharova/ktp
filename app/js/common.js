@@ -94,35 +94,6 @@ $(document).ready(function () {
         $(".gallery-slider-cp").text(currentSlide < 10 ? `0${currentSlide + 1}` : currentSlide + 1);
     });
 
-    ymaps.ready(function () {
-        var map = new ymaps.Map("map", {
-            center: [59.852746, 30.301584],
-            zoom: 15
-        });
-
-        var place = new ymaps.Placemark(
-            [59.852746, 30.301584], {
-                hintContent: 'Санкт-Петербург, пр. Ленинский д. 160 лит. А',
-            }, {
-                iconImageHref: 'img/loc.png',
-                iconImageSize: [49, 65],
-                iconLayout: 'default#image',
-            }
-        );
-        map.geoObjects.add(place);
-    });
-
-    $('.gallery-box').fancybox();
-    $('[data-fancybox="video"]').fancybox({
-        youtube: {
-            controls: 0,
-            showinfo: 0
-        },
-        vimeo: {
-            color: 'f00'
-        }
-    });
-
     $('.header-bottom .drop-item').click(function (e) {
         e.preventDefault();
         $('.header-dropdown').fadeToggle();
@@ -145,11 +116,6 @@ $(document).ready(function () {
     $('.calculation .btn-next').click(function (e) {
         e.preventDefault();
         $('.calculation-body').hide().eq(activeStep++).show();
-
-        // if (activeStep == $('.calculation-body').length) {
-        //     $(this).hide();
-        // }
-        // $('.readiness-scale__line .bg-line').css("width", "+=25%");
 
         $('.readiness-scale span').text(parseFloat($('.readiness-scale span').text()) + 1);
     });
@@ -190,6 +156,37 @@ $(document).ready(function () {
             $('.table-scroll__left').css('display', 'none');
         }
     });
+
+    ymaps.ready(function () {
+        var map = new ymaps.Map("map", {
+            center: [59.852746, 30.301584],
+            zoom: 15
+        });
+
+        var place = new ymaps.Placemark(
+            [59.852746, 30.301584], {
+                hintContent: 'Санкт-Петербург, пр. Ленинский д. 160 лит. А',
+            }, {
+                iconImageHref: 'img/loc.png',
+                iconImageSize: [49, 65],
+                iconLayout: 'default#image',
+            }
+        );
+        map.geoObjects.add(place);
+    });
+
+    $('.gallery-box').fancybox();
+    $('[data-fancybox="video"]').fancybox({
+        youtube: {
+            controls: 0,
+            showinfo: 0
+        },
+        vimeo: {
+            color: 'f00'
+        }
+    });
+
+
 
 });
 
