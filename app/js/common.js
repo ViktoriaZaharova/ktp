@@ -156,7 +156,7 @@ $(document).ready(function () {
 
     $('.links-view').click(function (e) {
         e.preventDefault();
-        $('.general-description .text-box').addClass('item-view');
+        $(this).siblings('.text-box').addClass('item-view');
         $(this).hide();
     });
 
